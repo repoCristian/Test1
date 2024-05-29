@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.utest2.runners.RegisterRunner" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-05-29T19:19:20" hostname="SQAMED-PCC99621" time="25.079">
+  <properties/>
+  <testcase name="Sing up" classname="com.utest2.runners.RegisterRunner" time="25.079"/>
+  <system-out><![CDATA[
+Scenario Outline: Sing up                               ?[90m# src/test/resources/features/register.feature:18?[0m
+  ?[32mGiven ?[0m?[32mthe ?[0m?[32m?[1muser?[0m?[32m has opened URL?[0m                         ?[90m# com.utest2.stepdefinitions.register.RegisterStepDefinitions.givenThatUserHasOpenedWebsite(java.lang.String)?[0m
+  ?[32mWhen ?[0m?[32mthe user click on join today button?[0m              ?[90m# com.utest2.stepdefinitions.register.RegisterStepDefinitions.whenTheUserClickOnJoinTodayButton()?[0m
+  ?[32mAnd ?[0m?[32mthe user fills out the registration 1 and 2 steps?[0m ?[90m# com.utest2.stepdefinitions.register.RegisterStepDefinitions.andTheUserFillsOutTheRegistration1And2Steps(io.cucumber.datatable.DataTable)?[0m
+    | FirstName | LastName | Email       | Month | Day | Year | Language | City     | ZipCode | Country  |
+    | Jota      | posada   | 123@123.com | March | 19  | 1980 | Spanish  | Medellin | 05500   | Colombia |
+  ?[32mAnd ?[0m?[32mthe  user continue 3 and 4 steps registration?[0m     ?[90m# com.utest2.stepdefinitions.register.RegisterStepDefinitions.andTheUserContinue3And4StepsRegistration(io.cucumber.datatable.DataTable)?[0m
+    | Computer | Version | Language1 | Password     |
+    | Linux    | Debian  | English   | Cristian123! |
+  ?[32mThen ?[0m?[32mthe user should welcome message?[0m                  ?[90m# com.utest2.stepdefinitions.register.RegisterStepDefinitions.thenTheUserShouldWelcomeMessage()?[0m
+]]></system-out>
+  <system-err><![CDATA[may. 29, 2024 2:19:22 P. M. org.openqa.selenium.remote.RemoteWebDriver checkNonW3CCapabilities
+ADVERTENCIA: Support for Legacy Capabilities is deprecated; You are sending the following invalid capabilities: [prefs]; Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+Starting Microsoft Edge WebDriver 125.0.2535.67 (626a82df5fa7d0d88fbb990d069c0dd83672d0dc) on port 22107
+To submit feedback, report a bug, or suggest new features, please visit https://github.com/MicrosoftEdge/EdgeWebDriver
+
+Only local connections are allowed.
+Please see https://aka.ms/WebDriverSecurity for suggestions on keeping Microsoft Edge WebDriver safe.
+
+Microsoft Edge WebDriver was started successfully.
+may. 29, 2024 2:19:23 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+ADVERTENCIA: Support for Legacy Capabilities is deprecated; You are sending the following invalid capabilities: [prefs]; Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+may. 29, 2024 2:19:23 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTENCIA: Unable to find CDP implementation matching 125
+may. 29, 2024 2:19:23 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+ADVERTENCIA: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.7.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+?[32m?[1m??????????????????????????????????????????????????????????????????????????????????????[0m
+?[32m?[1m??[0m Share your Cucumber Report with your team at ?[36m?[1m?[4mhttps://reports.cucumber.io?[0m          ?[32m?[1m??[0m
+?[32m?[1m??[0m Activate publishing with one of the following:                                    ?[32m?[1m??[0m
+?[32m?[1m??[0m                                                                                   ?[32m?[1m??[0m
+?[32m?[1m??[0m src/test/resources/cucumber.properties:          ?[36mcucumber.publish.enabled?[0m=?[36mtrue?[0m    ?[32m?[1m??[0m
+?[32m?[1m??[0m src/test/resources/junit-platform.properties:    ?[36mcucumber.publish.enabled?[0m=?[36mtrue?[0m    ?[32m?[1m??[0m
+?[32m?[1m??[0m Environment variable:                            ?[36mCUCUMBER_PUBLISH_ENABLED?[0m=?[36mtrue?[0m    ?[32m?[1m??[0m
+?[32m?[1m??[0m JUnit:                                           ?[36m@CucumberOptions?[0m(publish = ?[36mtrue?[0m) ?[32m?[1m??[0m
+?[32m?[1m??[0m                                                                                   ?[32m?[1m??[0m
+?[32m?[1m??[0m More information at ?[36mhttps://cucumber.io/docs/cucumber/environment-variables/?[0m      ?[32m?[1m??[0m
+?[32m?[1m??[0m                                                                                   ?[32m?[1m??[0m
+?[32m?[1m??[0m Disable this message with one of the following:                                   ?[32m?[1m??[0m
+?[32m?[1m??[0m                                                                                   ?[32m?[1m??[0m
+?[32m?[1m??[0m src/test/resources/cucumber.properties:          ?[36mcucumber.publish.quiet?[0m=?[36mtrue?[0m      ?[32m?[1m??[0m
+?[32m?[1m??[0m src/test/resources/junit-platform.properties:    ?[36mcucumber.publish.quiet?[0m=?[36mtrue?[0m      ?[32m?[1m??[0m
+?[32m?[1m??????????????????????????????????????????????????????????????????????????????????????[0m
+]]></system-err>
+</testsuite>
